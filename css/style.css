@@ -1,0 +1,287 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+ul, ol {
+    list-style-type: none;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+}
+
+.title {
+    padding-bottom: 30px;
+}
+
+.title h3 {
+    font-size: 22px;
+    color: #222222;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-family: 'Oswald', sans-serif;
+    position: relative;
+    display: inline-block;
+}
+
+.title h3::after {
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 122px;
+    height: 7px;
+    background: url(../images/title-after.png);
+    content: "";
+}
+
+/*-----navbar part start-----*/
+
+nav {
+    background-color: rgba(53, 53, 53, 0.25);
+    position: absolute !important;
+    top: 30px;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+}
+
+nav .main_logo {
+    padding: 10px 30px;
+    background-color: #323232;
+    position: absolute;
+    top: -10px;
+    display: inline-block;
+    transform: skew(-30deg);
+}
+
+nav .main_logo img {
+    transform: skew(30deg);
+}
+
+.navbar {
+    padding: 0;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+    padding: 0;
+}
+
+nav ul li a {
+    font-size: 14px;
+    font-weight: 400;
+    color: #f1f1f1;
+    text-transform: uppercase;
+    font-family: 'Oswald', sans-serif;
+    background-color: transparent;
+    padding: 0 15px !important;
+    line-height: 50px;
+    transition: all linear .3s !important;
+    position: relative;
+}
+
+nav ul li a:hover {
+    color: #222222;
+    background-color: #f1f1f1;
+}
+
+nav ul li a::after {
+    width: 0;
+    height: 3px;
+    background-color: #e23e38;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    content: "";
+    transition: all linear .3s;
+}
+
+nav ul li a:hover::after {
+    width: 50%;
+}
+
+/*-----navbar part end-----*/
+
+/*-----banner part start-----*/
+
+#banner {
+    position: relative;
+}
+
+#banner .banner_bg {
+    width: 100%;
+    background: url(../images/banner1.png) no-repeat center;
+    background-size: cover;
+    padding: 129px 0;
+}
+
+#banner .banner-2 {
+    width: 100%;
+    background: url(../images/banner-2.jpg) no-repeat center;
+    background-size: cover;
+    padding: 0;
+}
+
+#banner .banner-2 .overlay {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .6);
+    padding: 129px 0;
+}
+
+#banner .banner-2 .overlay p {
+    padding-left: 0;
+    padding-right: 100px;
+}
+
+#banner .banner-2 .overlay a {
+    margin-left: 0;
+    margin-right: 30px;
+}
+
+#banner .banner-3 {
+    width: 100%;
+    background: url(../images/banner-3.jpg) no-repeat center;
+    background-size: cover;
+    padding: 0;
+}
+
+#banner .banner-3 .overlay {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .6);
+    padding: 129px 0;
+}
+
+#banner .banner-3 .overlay p {
+    padding-left: 0;
+    padding-right: 100px;
+}
+
+#banner .banner-3 .overlay a {
+    margin-left: 0;
+    margin-right: 30px;
+}
+
+#banner h2 {
+    font-size: 30px;
+    font-weight: 700;
+    color: #fff;
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+}
+
+#banner h1 {
+    font-size: 60px;
+    font-weight: 700;
+    color: #e23e38;
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    padding-top: 11px;
+}
+
+#banner p {
+    font-size: 13px;
+    font-weight: 400;
+    color: #dddddd;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 18px;
+    padding: 10px 60px 30px;
+}
+
+#banner a {
+    font-size: 16px;
+    font-weight: 500;
+    color: #fff;
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    margin: 0 15px;
+    padding: 10px 20px;
+    transition: all linear .3s;
+    border: 1px solid #fff;
+}
+
+#banner a:hover {
+    background-color: #e23e38;
+    border-color: #e23e38;
+}
+
+#banner .content {
+    margin-top: 118px;
+}
+
+#banner ul {
+    position: absolute;
+    bottom: 32px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#banner ul li {
+    display: inline-block;
+    margin: 0 3px;
+}
+
+#banner ul li button {
+    background-color: transparent;
+    font-size: 0;
+    width: 18px;
+    height: 18px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    transition: all linear .3s;
+}
+
+#banner ul li.slick-active button{
+    background-color: #e23e38;
+    border-color: #e23e38;
+}
+
+/*-----banner part end-----*/
+
+/*-----about part start-----*/
+
+#about {
+    padding-top: 80px;
+}
+
+#about .image {
+    position: relative;
+}
+
+#about .image .overlay {
+    height: 100%;
+    background-color: rgba(0, 0, 0, .60);
+}
+
+#about .overlay i {
+    width: 50px;
+    height: 50px;
+    background-color: #e23e38;
+    color: #1b181e;
+    text-align: center;
+    line-height: 50px;
+    font-size: 24px;
+    border-radius: 50%;
+}
+
+#about .text p {
+    font-size: 14px;
+    font-weight: 400;
+    color: #444;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 24px;
+    padding-bottom: 34px;
+    width: 526px;
+    margin: 0 auto;
+}
+
+/*-----about part end-----*/
